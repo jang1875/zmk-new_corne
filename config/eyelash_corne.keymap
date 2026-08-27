@@ -6,7 +6,6 @@
 #include <behaviors/runtime-sensor-rotate.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -51,10 +50,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E                  &kp R      &kp T                                       &kp UP                &kp Y        &kp Y        &kp U     &kp I      &kp O       &kp P
-&kp BACKSPACE  &kp A  &kp S  &kp D                  &kp F      &kp G                             &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp H        &kp J     &kp K      &kp L       &kp SEMI
-&kp LCTRL      &kp Z  &kp X  &kp C                  &kp V      &kp B                    &kp A              &kp DOWN              &kp B        &kp N        &kp M     &kp COMMA  &kp KP_DOT  &kp SLASH
-                             &mt LEFT_ALT LEFT_GUI  &lt 3 ESC  &mt LEFT_SHIFT KP_ENTER                                           &lt 2 ENTER  &lt 1 SPACE  &kp RALT
+&kp TAB                 &kp Q  &kp W  &kp E           &kp R               &kp T                         &kp UP                &kp Y        &kp Y        &kp U     &kp I      &kp O       &kp P
+&mt CAPSLOCK BACKSPACE  &kp A  &kp S  &kp D           &kp F               &kp G               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp H        &kp J     &kp K      &kp L       &kp SEMI
+&kp LCTRL               &kp Z  &kp X  &kp C           &kp V               &kp B      &kp A              &kp DOWN              &kp B        &kp N        &kp M     &kp COMMA  &kp KP_DOT  &kp SLASH
+                                      &lt 2 LEFT_GUI  &mt RSHFT KP_ENTER  &lt 3 ESC                                           &lt 3 ENTER  &lt 1 SPACE  &kp RALT
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -75,10 +74,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT         &kp HASH      &kp DLLR              &kp PRCNT                                        &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE   &none         &none                 &mkp MB5               &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                     &trans        &trans                &kp SPACE                                                                         &kp RET    &trans     &trans
+&trans  &kp EXCL   &kp AT         &kp HASH          &kp DLLR              &kp PRCNT                                        &mmv MOVE_UP                     &kp CARET  &kp NUMBER_7  &kp N8        &kp NUMBER_9  &kp RPAR  &kp BSPC
+&trans  &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BSLH  &kp GRAVE
+&trans  &kp MINUS  &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &mkp MB5               &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp PIPE  &kp TILDE
+                                  &trans            &trans                &kp SPACE                                                                         &kp RET    &trans        &kp N0
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
