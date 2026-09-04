@@ -9,11 +9,11 @@ layers:
   - T
   - $$mdi:arrow-up-bold$$
   - Y
-  - Y
   - U
   - I
   - O
   - P
+  - $$mdi:keyboard-esc$$
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-caps$$'}
   - A
   - S
@@ -24,11 +24,11 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - H
-  - H
   - J
   - K
   - L
   - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -37,10 +37,10 @@ layers:
   - B
   - A
   - $$mdi:arrow-down-bold$$
-  - B
   - N
   - M
   - {t: ',', s: <}
+  - {t: ., s: '>'}
   - KP DOT
   - {t: /, s: '?'}
   - {t: '$$mdi:apple-keyboard-command$$', h: SYMBOL}
