@@ -45,7 +45,7 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:apple-keyboard-command$$', h: SYMBOL}
   - {t: KP ENTER, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-esc$$', h: Fn}
+  - {t: '$$mdi:keyboard-return$$', h: Fn}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
   - {t: '$$mdi:keyboard-space$$', h: NUMBER}
   - $$mdi:apple-keyboard-option$$
@@ -64,11 +64,11 @@ layers:
   - HOME
   - PgUp
   - $$mdi:apple-keyboard-caps$$
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - {t: '5', s: '%'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -78,12 +78,12 @@ layers:
   - $$mdi:arrow-right-bold$$
   - END
   - PgDn
-  - {t: '$$mdi:transfer$$', type: trans}
-  - RGB OFF
-  - '1'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - RGB EFF
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - '6'
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - RGB EFR
@@ -93,8 +93,8 @@ layers:
   - END
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - INS
   - {t: '$$mdi:backspace-reverse-outline$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -110,7 +110,7 @@ layers:
   - '7'
   - {t: '8', s: '*'}
   - '9'
-  - )
+  - {t: '-', s: _}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - ^
@@ -125,7 +125,7 @@ layers:
   - '4'
   - '5'
   - '6'
-  - {t: \, s: '|'}
+  - +
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '-', s: _}
@@ -139,7 +139,7 @@ layers:
   - {t: '1', s: '!'}
   - '2'
   - '3'
-  - '|'
+  - {t: '=', s: +}
   - '~'
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -197,5 +197,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [1, 15, 29]
-  k: '&soft_off'
+- p: [14, 15]
+  k: Ctl+C
+- p: [15, 16]
+  k: Ctl+V
+- p: [2, 3]
+  k: (
+- p: [3, 17]
+  k: )
+- p: [14, 28]
+  k: ':'
+- p: [13, 14]
+  k: '~'
